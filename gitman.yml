@@ -1,14 +1,14 @@
 location: themes
 sources:
 - name: hugo-split-theme
-  repo: https://github.com/christianmendoza/hugo-split-theme
+  repo: https://github.com/maketested/hugo-split-theme
   rev: master
   link:
   scripts:
   -
 sources_locked:
 - name: hugo-split-theme
-  repo: https://github.com/christianmendoza/hugo-split-theme
+  repo: https://github.com/maketested/hugo-split-theme
   rev: 2c910e5ab4d7abfd87f29cfea9d92deeed05f3d3
   link:
   scripts:

@@ -1,7 +1,7 @@
 # Site settings
-baseURL = "https://example.org/"
+baseURL = "https://griffinbrowning.com"
 languageCode = "en-US"
-title = "Split - HTML Template Demo"
+title = "Griffin Browning"
 theme = "hugo-split-theme"
 disableKinds = ["page", "section", "taxonomy", "taxonomyTerm", "RSS", "sitemap", "robotsTXT"]
 
@@ -11,22 +11,24 @@ googleAnalytics = ""
 [params]
 
   # Metadata for search engines and social sharing
-  name = "Jenny Jones"
-  description = "Split is a centrally-divided layout for a professional online presence with a big image or video left with alongside content."
-  shareImage = "images/social.jpg"
-  twitterHandle = "onepagelove"
+  name = "Griffin Browning"
+  description = "Graphic artist, bartender, and comedian in Columbus, OH."
+  shareImage = "images/17862532_10155410675384416_6014128723221812708_n.jpg"
+  twitterHandle = "griffinbrowning"
 
   # Favicon
   favicon = "favicon.ico"
 
   # Copyright
-  copyright = "&copy;2017 Your Name"
+  copyright = "&copy; 2017 Griffin Browning"
 
   # Section - Content
   [params.content]
-    name = "Jenny Jones"
-    tagline = "Designer. Stylist. Nomad."
-    bio = "Donec at libero id lectus porta dapibus eu in nibh. Cras id mauris sapien. Fusce viverra [luctus urna](#) ac rutrum. Duis semper elit eu mi facilisis eleifend. Donec semper, [ipsum in](#) malesuada congue, [purus sem](#) ullamcorper massa, sit amet lacinia nibh enim sed massa."
+    name = "Griffin Browning"
+    tagline = "Graphic Artist. Bartender. Comedian."
+    bio = ""
+    # TODO: Add a bio?
+    # bio = "Donec at libero id lectus porta dapibus eu in nibh. Cras id mauris sapien. Fusce viverra [luctus urna](#) ac rutrum. Duis semper elit eu mi facilisis eleifend. Donec semper, [ipsum in](#) malesuada congue, [purus sem](#) ullamcorper massa, sit amet lacinia nibh enim sed massa."
 
   # Section - Visual
   [params.visual]
@@ -34,7 +36,7 @@ googleAnalytics = ""
     # Image
     [params.visual.image]
       enable = true
-      file = "images/background.jpg"
+      file = "images/17862532_10155410675384416_6014128723221812708_n.jpg"
       position = "center center"
 
     # Video
@@ -49,53 +51,53 @@ googleAnalytics = ""
   # Links List #1
   [[params.links]]
     [params.links.list1]
-      heading = "Connect"
+      heading = "Content"
 
       [[params.links.list1.link]]
-        text = "Blog"
-        url = "#"
+        text = "YouTube"
+        url = "https://www.youtube.com/results?search_query=%22Griffin+Browning%22"
 
       [[params.links.list1.link]]
-        text = "Email"
-        url = "#"
+        text = "Podcast"
+        url = "https://itunes.apple.com/us/podcast/filibusted!-brian-tower-doney/id1069611146"
 
       [[params.links.list1.link]]
-        text = "Newsletter"
-        url = "#"
+        text = "Comic"
+        url = "https://nocomment.jacebrowning.info"
 
   # Links List #2
   [[params.links]]
     [params.links.list2]
-      heading = "Social"
+      heading = "Connect"
+
+      [[params.links.list2.link]]
+        text = "Facebook"
+        url = "https://www.facebook.com/griffinbrowning"
 
       [[params.links.list2.link]]
         text = "Twitter"
-        url = "#"
+        url = "https://twitter.com/griffinbrowning"
 
       [[params.links.list2.link]]
-        text = "Instagram"
-        url = "#"
-
-      [[params.links.list2.link]]
-        text = "Dribbble"
-        url = "#"
+        text = "Email"
+        url = "mailto:griffinbrowning@gmail.com?subject=griffinbrowning.com"
 
   # Links List #3
-  [[params.links]]
-    [params.links.list3]
-      heading = "Network"
+  # [[params.links]]
+  #   [params.links.list3]
+  #     heading = "Network"
 
-      [[params.links.list3.link]]
-        text = "Link One"
-        url = "#"
+  #     [[params.links.list3.link]]
+  #       text = "Link One"
+  #       url = "#"
 
-      [[params.links.list3.link]]
-        text = "Link Two"
-        url = "#"
+  #     [[params.links.list3.link]]
+  #       text = "Link Two"
+  #       url = "#"
 
-      [[params.links.list3.link]]
-        text = "Link Three"
-        url = "#"
+  #     [[params.links.list3.link]]
+  #       text = "Link Three"
+  #       url = "#"
 
   # The original template is released under the Creative Commons Attribution 3.0 License.
   # Please keep the original attribution link when using for your own project.
