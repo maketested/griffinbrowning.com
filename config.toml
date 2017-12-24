@@ -12,8 +12,8 @@ googleAnalytics = ""
 
   # Metadata for search engines and social sharing
   name = "Griffin Browning"
-  description = "Graphic artist, bartender, and comedian in Columbus, OH."
-  shareImage = "images/17862532_10155410675384416_6014128723221812708_n.jpg"
+  description = "Graphic artist, bartender, and comedian in Columbus, Ohio."
+  shareImage = "images/share.jpg"
   twitterHandle = "griffinbrowning"
 
   # Favicon
@@ -36,7 +36,7 @@ googleAnalytics = ""
     # Image
     [params.visual.image]
       enable = true
-      file = "images/17862532_10155410675384416_6014128723221812708_n.jpg"
+      file = "images/background.jpg"
       position = "center center"
 
     # Video
