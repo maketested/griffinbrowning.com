@@ -20,7 +20,7 @@ googleAnalytics = ""
   favicon = "favicon.ico"
 
   # Copyright
-  copyright = "&copy; 2017 Griffin Browning"
+  copyright = "Copyright &copy; 2017, MakeTested LLC"
 
   # Section - Content
   [params.content]
