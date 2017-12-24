@@ -1,0 +1,32 @@
+language: go
+
+install:
+  - go get -v github.com/maketested/hugo
+  - mkdir themes
+  - git clone https://github.com/maketested/hugo-split-theme themes/hugo-split-theme
+
+script:
+  - hugo --verbose
+  # TODO: Switch domain
+  # - echo griffinbrowning.com > public/CNAME
+
+after_success: >
+  echo $TRAVIS_BRANCH; echo $TRAVIS_PULL_REQUEST;
+  if [[ $TRAVIS_BRANCH == 'master' && $TRAVIS_PULL_REQUEST == 'false' ]]; then
+    # Configure Git with Travis CI information
+    git config --global user.email "travis@travis-ci.org" ;
+    git config --global user.name "travis-ci" ;
+    # Delete the current repository
+    rm -rf .git ;
+    # Rebuild the repository from the generated files and push to GitHub pages
+    cd public ;
+    git init ;
+    git add . ;
+    git commit -m "Deploy Travis CI build $TRAVIS_BUILD_NUMBER to GitHub pages" ;
+    git push -f https://${GH_TOKEN}@github.com/${TRAVIS_REPO_SLUG} master:gh-pages ;
+  fi
+
+notifications:
+  email:
+    on_success: never
+    on_failure: change
