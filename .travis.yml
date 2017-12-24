@@ -7,8 +7,7 @@ install:
 
 script:
   - hugo --verbose
-  # TODO: Switch domain
-  # - echo griffinbrowning.com > public/CNAME
+  - echo griffinbrowning.com > public/CNAME
 
 after_success: >
   echo $TRAVIS_BRANCH; echo $TRAVIS_PULL_REQUEST;
